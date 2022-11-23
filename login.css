@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: #b5a886;
+}
+::selection {
+  background: #394053;
+}
+
+.container-login {
+  max-width: 440px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+.form-login {
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(34, 24, 24, 0.1);
+}
+.form-login .title-login {
+  height: 90px;
+  background: #394053;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-login .text-login {
+  position: absolute;
+}
+
+.form-login form {
+  padding: 30px 25px 25px 25px;
+}
+.form-login form .row {
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.form-login form .row input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .row input:focus {
+  border-color: #394053;
+  box-shadow: inset 0px 0px 2px 2px #1d1d20;
+}
+form .row input::placeholder {
+  color: #999;
+}
+.form-login form .row i {
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: #394053;
+  border: 1px solid #394053;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-login form .contraseña {
+  margin: -8px 0 20px 0;
+}
+.form-login form .contraseña a {
+  color: #394053;
+  font-size: 17px;
+  text-decoration: none;
+}
+.form-login form .contraseña a:hover {
+  text-decoration: underline;
+}
+.form-login form .button input {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #394053;
+  border: 1px solid #394053;
+  cursor: pointer;
+}
+form .button input:hover {
+  background: #394053;
+}
+.form-login form .registro {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.form-login form .registro a {
+  color: #394053;
+  text-decoration: none;
+}
+form .registro a:hover {
+  text-decoration: underline;
+}
+
+/* media queries */

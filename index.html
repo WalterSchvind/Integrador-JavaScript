@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fab587c040.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <title>E5-JS</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="nav__link" href="index.html"><img class="nav__img" id="logo" src="assets/img/icon.png" />
+        <div class="nav__menu">
+          <a class="nav__link" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          <a class="nav__link" href="#productos"><i class="fa-brands fa-product-hunt"></i> Productos</a>
+          <a class="nav__link" href="login.html"><i class="fa-solid fa-user"></i>Login</a>
+          <a class="nav__link" href="#"><i class="fa-solid fa-bag-shopping" id="open"></i>Carrito</a>
+
+          <div class="overlay"></div>
+        </div>
+    </nav>
+  </header>
+  <section class="hero container">
+    <div class="info">
+      <h1 class="info__h1">Ropa para todos</h1>
+      <p class="info__p">
+        En Delt podes conseguir articulos de ropa para todos
+      </p>
+      <p class="info__p">Tambien podes
+        <button class="btn"><a href="register.html">Registrate</a></button> para recibiri ofertas
+      </p>
+
+    </div>
+    <div class="images">
+      <div class="images__1">
+        <img id="messi" src="./assets/img/messi.jpg" alt="Foto presentacion " />
+      </div>
+    </div>
+  </section>
+  <section class="recommended container">
+    <h2 class="recommended__title">Preparate para el mundial</h2>
+    <div class="recommended__cards">
+    </div>
+  </section>
+  <section class="categories container" id="productos">
+    <h2 class="categories__title">Categorias</h2>
+    <div class="categories__cards">
+      <div class="card card--category box-shadow active">
+        <i class="card__icon fa-solid fa-fire"></i>
+        <p class="card__name">Populares</p>
+        <div class="line-gradient"></div>
+      </div>
+      <div class="card card--category box-shadow" data-category="mundial">
+        <i class="card__icon fa-solid fa-earth-americas"></i>
+        <p class="card__name" data-category="mundial">Mundial</p>
+
+      </div>
+      <div class="card card--category box-shadow" data-category="remeras">
+        <i class="fa-solid fa-shirt"></i>
+        <p class="card__name" data-category="remeras">Remeras</p>
+
+      </div>
+      <div class="card card--category box-shadow" data-category="running">
+        <i class="fa-solid fa-person-running"></i>
+        <p class="card__name" data-category="running">Running</p>
+
+      </div>
+      <div class="card card--category box-shadow" data-category="medias">
+        <i class="fa-solid fa-socks"></i>
+        <p class="card__name" data-category="medias">Medias</p>
+
+      </div>
+      <div class="card card--category box-shadow" data-category="kid">
+        <i class="fa-solid fa-child"></i>
+        <p class="card__name" data-category="kid">Kids Clothes</p>
+
+      </div>
+
+    </div>
+  </section>
+  <main class="items container">
+    <h2 class="items__title">Las mas populares</h2>
+    <div class="items__cards" id="productos">
+      <!-- Card a renderizar  -->
+
+    </div>
+  </main>
+  <footer class="footer container">
+    <div class="footer__links">
+      <a class="footer__a" href="">Contactanos</a>
+      <a class="footer__a" href="">Trabajá con Nosotros</a>
+      <a class="footer__a" href="">Soporte</a>
+    </div>
+    <p class="footer__p">
+      Integrador hecho por Walter Schvind
+    </p>
+  </footer>
+  <!-- Carrito de compras  -->
+  <div class="cart" id="cart">
+    <span class="btn btn--close" id="close">X</span>
+    <span class="cart__heading">Tus Productos:</span>
+    <div class="cart__main">
+
+    </div>
+    <div class="cart-total">
+      <p>Total:</p>
+      <span class="total"> 0.00 $</span>
+    </div>
+    <div class="btn-contain">
+      <button class="btn-buy btn">Comprar</button>
+      <button class="btn-delete btn">Vaciar carrito</button>
+    </div>
+
+  </div>
+  <div class="add-modal"></div>
+  </div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+
+</html>
